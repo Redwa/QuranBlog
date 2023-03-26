@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'App',
     'ckeditor',
     'ckeditor_uploader',
+    'embed_video',
 ]
 
 MIDDLEWARE = [

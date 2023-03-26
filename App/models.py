@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from ckeditor.fields import RichTextField
+from embed_video.fields import EmbedVideoField
 # Create your models here.
 
 STATUS = ((0, "Draft"), (1, "Published"))
@@ -13,6 +14,7 @@ class Post(models.Model):
   updated_on = models.DateTimeField(auto_now=True)
   summary = RichTextField(blank=True, null=True)
   content = RichTextField(blank=True, null=True)
+  video_link = EmbedVideoField(blank=True, null=True)
   status = models.IntegerField(choices=STATUS, default=0)
 
   class Meta:
