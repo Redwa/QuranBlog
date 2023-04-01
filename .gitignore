@@ -1,0 +1,5 @@
+# Ignore
+todo.txt
+
+# Ignore files relatted to Secret Keys
+.env
