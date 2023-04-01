@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('django_sk', 'local')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['quranblog.net', 'www.quranblog.net', '127.0.0.1']
+ALLOWED_HOSTS = ['quranblog.net', 'www.quranblog.net', '127.0.0.1', 'monkfish-app-jdx6a.ondigitalocean.app']
 # Application definition
 
 INSTALLED_APPS = [
