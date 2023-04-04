@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Supplications</h2>
+      <div class="dropdown">
+        <button class="dropbtn">Supplications</button>
+        <div class="dropdown-content">
+            <a href="{% url 'supplications' %}">Main Supplications List</a>
+            <a href="thamali.html">Thamali Du'a</a>
+        </div>
+    </div>
+    
+    </div>
+  </div>
+</div>
+{% endblock %}

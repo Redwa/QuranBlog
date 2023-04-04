@@ -15,10 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from App import views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('App.urls')),
+    path('', views.PostList.as_view(), name="home"),
+    path('blog/', views.BlogView.as_view(), name="blog"),
+    path('supplications/', views.SupplicationsView.as_view(), name="supplications"),
+    path('recitations/', views.RecitationsView.as_view(), name="recitations"),
+    path('<slug:slug>/', views.PostView.as_view(), name="post_detail"),
     path('ckeditor/', include('ckeditor_uploader.urls')),
 ]
-

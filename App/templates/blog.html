@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+      <!-- Blog Entries Column -->
+      <div class="col-md-8 mt-3 left">
+          <div class="card mb-4">
+              <div class="card-body" style="font-family: Arial">
+                  <h2 class="card-title">Quran Topics</h2>
+                  <!-- <p class="card-text text-muted h6"></p> -->
+                  <p class="card-text">
+                      <h4>On this page, we will explore various aspects of the Quran, including beliefs, rituals, Islamic law, and spirituality. Additional content will be added after Ramadan 1444.</h4>
+                      
+                  </p> 
+  
+              </div>
+          </div>
+      
+      </div>
+      {% block sidebar %} 
+      {% include 'sidebar.html' %} 
+      {% endblock sidebar %}
+    </div>
+  </div>
+  {%endblock%}
